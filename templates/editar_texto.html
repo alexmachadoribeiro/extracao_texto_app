@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Edição de textos{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-8">
+            <div class="card p-4 shadow-lg">
+                <h1 class="card-title text-center mb-4">Edição de Texto Extraído</h1>
+                <form method="POST" action="/editar">
+                    <div class="mb-3">
+                        <label for="texto" class="form-label">Texto Extraído:</label>
+                        <textarea class="form-control" id="texto" name="texto" rows="10" required>{{ texto or '' }}</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Salvar Alterações</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

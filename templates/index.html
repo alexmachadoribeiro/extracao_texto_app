@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Extrator de Texto de Imagens{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-6">
+                <div class="card p-4 shadow-lg">
+                    <h1 class="card-title text-center mb-4">Extrator de Texto de Imagens</h1>
+                    <form method="POST" action="/upload" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Selecione uma imagem:</label>
+                            <input class="form-control" type="file" id="image" name="image" accept="image/*" value="" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Extrair Texto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
