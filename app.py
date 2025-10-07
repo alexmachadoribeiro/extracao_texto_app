@@ -13,9 +13,9 @@ def editar():
 
 @app.route('/upload', methods=['POST'])
 def extrair_texto():
-    if 'image' not in request.files:
+    if 'imagem' not in request.files:
         return "Nenhuma imagem enviada", 400
-    imagem = request.files['image']
+    imagem = request.files['imagem']
     if imagem.filename == '':
         return "Nenhuma imagem selecionada", 400
     reader = easyocr.Reader(['en', 'pt'], gpu=False)
