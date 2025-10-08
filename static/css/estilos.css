@@ -23,3 +23,7 @@ footer {
 .min-vh-content {
     min-height: 80vh;
 }
+
+.img-negativo {
+    filter: invert(100%);
+}
