@@ -19,3 +19,7 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+.min-vh-content {
+    min-height: 80vh;
+}
