@@ -5,6 +5,7 @@
         <div class="row justify-content-center align-items-center min-vh-content">
             <div class="col-md-6">
                 <div class="card p-4 shadow-lg">
+                    <img src="{{ url_for('static', filename='images/ocr.png') }}" alt="Logo" class="img-fluid mx-auto d-block mb-4" style="max-width: 75px;">
                     <h1 class="card-title text-center mb-4">Extrator de Texto de Imagens</h1>
                     <form method="POST" action="/upload" enctype="multipart/form-data">
                         <div class="mb-3">

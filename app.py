@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, send_file
-import easyocr
 from docx import Document
+import easyocr
 import io
 
 app = Flask(__name__)
